@@ -10,7 +10,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch(`http://openlibrary.org/search.json?author=&title=${title}`, requestOptions)
+fetch(`https://openlibrary.org/search.json?author=&title=${title}`, requestOptions)
   .then(response => response.json())
   .then((result) => {
     console.log(result.docs[0].title);
