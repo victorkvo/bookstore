@@ -13,176 +13,74 @@
     />
     <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
-<body>
-    
-<div class="container mt-2">
-    <h1 class="text-center">Search for Books</h1>
-    <form action="" class="row g-3 justify-content-center">
-        <div class="col-auto">
-            <input type="text" class="" id="search" placeholder="Title Name" />
-        </div>
-        <div class="col-auto">
-            <button type="submit" class="btn btn-primary" id="submit">
-                Search
-              </button>
-        </div>
-    </form>
 
-    <div class="container-fluid bg-3 text-center">
-        <!-- first row -->
-      <div class="row">
-        <div class="col-md-4">
-          <p id="title0"></p>
-          <img
-            id="book0"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc0"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title1"></p>
-          <img
-            id="book1"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc1"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title2"></p>
-          <img
-            id="book2"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc2"></p>
-        </div>
-      </div>
-      <!-- second row -->
-      <div class="row">
-        <div class="col-md-4">
-          <p id="title3"></p>
-          <img
-            id="book3"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc3"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title4"></p>
-          <img
-            id="book4"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc4"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title5"></p>
-          <img
-            id="book5"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc5"></p>
-        </div>
-      </div>
-      <!-- third row -->
-      <div class="row">
-        <div class="col-md-4">
-          <p id="title6"></p>
-          <img
-            id="book6"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc6"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title7"></p>
-          <img
-            id="book7"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc7"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title8"></p>
-          <img
-            id="book8"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc8"></p>
-        </div>
-      </div>
-      <!-- fourth row -->
-      <div class="row">
-        <div class="col-md-4">
-          <p id="title9"></p>
-          <img
-            id="book9"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc9"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title10"></p>
-          <img
-            id="book10"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc10"></p>
-        </div>
-        <div class="col-md-4">
-          <p id="title11"></p>
-          <img
-            id="book11"
-            src=""
-            class="img-responsive"
-            style="width: 100%"
-            alt="book result"
-          />
-          <p id="desc11"></p>
-        </div>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="./images/bookicon.png" width="80" height="40" alt="book icon">
+  </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="author.html">Search by Author</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="subject.html">Search by Genre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="title.html">Search by Title</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 card" style="width:400px">
+                <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/41HFKexb4WL._SX390_BO1,204,203,200_.jpg" alt="Card image">
+                <div class="card-body">
+                  <h6 class="card-title">Eat Better, Feel Better: My Recipes for Wellness and Healing, Inside and Out</h4>
+                  <a href="https://www.amazon.com/Giada-De-Laurentiis/e/B001H6U5YC/ref=dp_byline_cont_pop_book_1" class="btn btn-primary">Giada De Laurentiis</a>
+                </div>
+              </div>
+              <div class="col-md-4 card" style="width:400px">
+                <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/41HFKexb4WL._SX390_BO1,204,203,200_.jpg" alt="Card image">
+                <div class="card-body">
+                  <h6 class="card-title">Eat Better, Feel Better: My Recipes for Wellness and Healing, Inside and Out</h4>
+                  <a href="https://www.amazon.com/Giada-De-Laurentiis/e/B001H6U5YC/ref=dp_byline_cont_pop_book_1" class="btn btn-primary">Giada De Laurentiis</a>
+                </div>
+              </div>
+              <div class="col-md-4 card" style="width:400px">
+                <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/41HFKexb4WL._SX390_BO1,204,203,200_.jpg" alt="Card image">
+                <div class="card-body">
+                  <h6 class="card-title">Eat Better, Feel Better: My Recipes for Wellness and Healing, Inside and Out</h4>
+                  <a href="https://www.amazon.com/Giada-De-Laurentiis/e/B001H6U5YC/ref=dp_byline_cont_pop_book_1" class="btn btn-primary">Giada De Laurentiis</a>
+                </div>
+              </div>
         </div>
     </div>
-
-
-</div>
-
+    
 
 
 
-
-    <script src=index.js></script>
+    <script src="index.js"></script>
 </body>
 </html>
