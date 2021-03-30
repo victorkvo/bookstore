@@ -20,14 +20,14 @@ var requestOptions = {
   redirect: 'follow'
 };
 for(let i=0; i<12; i++){
-fetch(`http://openlibrary.org/search.json?title=${title}`, requestOptions)
+fetch(`https://openlibrary.org/search.json?title=${title}`, requestOptions)
   .then(response => response.json())
   .then((result) => {
     console.log(result.docs[i].title)
     document.getElementById(`title${i}`).innerHTML = result.docs[i].title;
     var isbn = result.docs[i].isbn[4]
     console.log(isbn)
-    document.getElementById(`book${i}`).src = `http://covers.openlibrary.org/b/isbn/${isbn}-M.jpg`;
+    document.getElementById(`book${i}`).src = `https://covers.openlibrary.org/b/isbn/${isbn}-M.jpg`;
     var works = result.docs[i].key;
     return fetch(`https://openlibrary.org${works}.json`, requestOptions)
   
