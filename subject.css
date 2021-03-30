@@ -1,3 +1,8 @@
 .row {
     visibility: hidden;
 }
+.largeF{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bolder;
+}

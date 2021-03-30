@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(235, 198, 194);
+    /* padding-top: 50%; */
+    /* background: url("../Image/limage.PNG");  */
+    /* background-repeat: repeat-y;  */
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+.home {
+    text-align: center;
+    color: rgb(18, 33, 245);
+    font-weight: bolder;
+}
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.fixed-header,
+.fixed-footer {
+    width: 100%;
+    position: fixed;
+    background: rgb(68, 62, 62);
+    /* background: rgb(235, 198, 194); */
+    /* background: url("../Headerimage.PNG");  */
+    padding: 10px 0;
+    color: rgb(238, 228, 228);
+}
+.fixed-header {
+    top: 0;
+}
+.fixed-footer {
+    bottom: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* Center the DIV horizontally */
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    display: inline-block;
+}
+.home {
+      font-family: "Akaya Telivigala", cursive;
+font-size: 30px;
+}
+.row {
+display: flex; 
+justify-content: center;
+}
+.largeF{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 4px;
+}
+.superlarge{
+    font-size: 40px;
+    font-weight: bold;
+}

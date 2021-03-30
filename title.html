@@ -11,6 +11,7 @@
       integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="stylesheet" type="text/css" href="title.css" />
 </head>
     <!-- Navbar with Search -->
@@ -30,7 +31,7 @@
                   <a class="nav-link" href="author.html">Search by Authors</a>
               </li>
                 <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="subject.html">Search byGenres</a>
+                      <a class="nav-link" aria-current="page" href="subject.html">Search by Genres</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="title.html" aria-disabled="true">Search by Title</a>
@@ -62,23 +63,23 @@
     <div class="container-fluid bg-3 text-center">
         <!-- first row -->
       <div class="row">
-        <div class="col-md-4 border">
+        <div class="col-md-4 border overflow-hidden p-3">
           <div class="card h-100">
-          <p id="title0"></p>
+          <p class="largeF" id="title0"></p>
           <img id="book0" src="" class="img-responsive" style="height: 100%" alt="book result"/>
           <p id="desc0"></p>
         </div>
         </div>
-        <div class="col-md-4 border ">
+        <div class="col-md-4 border overflow-hidden p-3">
           <div class="card h-100">
-          <p id="title1"></p>
+          <p class="largeF" id="title1"></p>
           <img id="book1" src="" class="img-responsive" style="height: 100%" alt="book result"/>
           <p id="desc1"></p>
         </div>
         </div>
-        <div class="col-md-4 border ">
+        <div class="col-md-4 border overflow-hidden p-3">
           <div class="card h-100">
-          <p id="title2"></p>
+          <p class="largeF" id="title2"></p>
           <img id="book2" src="" class="img-responsive" style="height: 100%" alt="book result"/>
           <p id="desc2"></p>
         </div>
@@ -86,20 +87,26 @@
       </div>
       <!-- second row -->
       <div class="row">
-        <div class="col-md-4 border overflow-hidden">
-          <p id="title3" class="fs-1"></p>
+        <div class="col-md-4 border overflow-hidden p-3">
+          <div class="card h-100">
+          <p class="largeF" id="title3" class="fs-1"></p>
           <img id="book3" src="" class="img-responsive" style="width: 100%" alt="book result"/>
           <p id="desc3"></p>
         </div>
-        <div class="col-md-4 border overflow-hidden">
-          <p id="title4" class="fs-2"></p>
+      </div>
+        <div class="col-md-4 border overflow-hidden p-3">
+          <div class="card h-100">
+          <p class="largeF" id="title4" class="fs-2"></p>
           <img id="book4" src="" class="img-responsive" style="width: 100%" alt="book result"/>
           <p id="desc4"></p>
         </div>
-        <div class="col-md-4 border overflow-hidden">
-          <p id="title5" class="fs-3"></p>
+      </div>
+        <div class="col-md-4 border overflow-hidden p-3">
+          <div class="card h-100">
+          <p class="largeF" id="title5" class="fs-3"></p>
           <img id="book5" src="" class="img-responsive" style="width: 100%" alt="book result"/>
           <p id="desc5"></p>
+        </div>
         </div>
       </div>
       <!-- third row -->
