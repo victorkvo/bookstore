@@ -4,6 +4,7 @@ submit.addEventListener("click", movieTitle);
 
 function movieTitle(e) {
   e.preventDefault();
+  //clears previous search results to avoid conflicts with results without images
   for(let o=0; o<6; o++){
     document.getElementById(`title${o}`).innerHTML = ""
     document.getElementById(`book${o}`).src = ""
@@ -32,6 +33,7 @@ fetch(`https://openlibrary.org/search.json?title=${title}`, requestOptions)
   .then(response => response.json())
   .then((result) => {
   
+    // if a title does not contain a description, a placeholder text will be displayed.
     if (result.description == undefined){
       document.getElementById(`desc${i}`).innerHTML = placeHolder
     }
@@ -50,16 +52,3 @@ document.getElementById('search').value='';
 
 
 
-// fetch(`http://openlibrary.org/search.json?author=&title=${title}`, requestOptions)
-//   .then(response => response.json())
-//   .then((result) => 
-//     console.log(result.docs[0].title);
-//     document.getElementById('titleP').innerHTML = result.docs[0].title;
-//     console.log(result.docs[0].key)
-//   )
-//   .then(user => fetch(`https://openlibrary.org${user.docs[0].key}.json`, requestOptions))
-//   .then(response1 => response1.json())
-//   .then((results1) => {
-//     console.log(results1.description)
-
-//   })
