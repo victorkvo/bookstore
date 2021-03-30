@@ -1,73 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="author.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
 </head>
-    <!-- Navbar with Search -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-              aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">
-              <img src="https://img.flaticon.com/icons/png/512/29/29302.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" alt=""
-                  width="50" height="35">
-          </a>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="author.html">Search by Authors</a>
-              </li>
-                <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="subject.html">Search byGenres</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="title.html" aria-disabled="true">Search by Title</a>
-                  </li>
-              </ul>
-              <!-- <form class="d-flex">
-                      <input class="form-control me-2" id="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" id="submit">Search</button>
-                  </form> -->
-          </div>
-      </div>
-  </nav>
 
-<body>
-<div class="container mt-2">
-    <h1 class="text-center">Search By Author</h1>
-    <form action="" class="row g-3 justify-content-center">
-        <div class="col-auto">
-            <input type="text" class="" id="AuthorSearch" placeholder="Author Name" />
+
+      <!-- Navbar with Search -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="https://img.flaticon.com/icons/png/512/29/29302.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" alt=""
+                    width="50" height="35">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="author.html">Search by Authors</a>
+                </li>
+                  <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="subject.html">Search by Genres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="title.html" aria-disabled="true">Search by Title</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex">
+                        <input class="form-control me-2" id="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" id="submit">Search</button>
+                    </form> -->
+            </div>
         </div>
-        <div class="col-auto">
-            <button type="submit" class="btn btn-primary" id="submit">
-                Search
-              </button>
+    </nav>
+    <body>
+    
+    <div class="container mt-2">
+        <h1 class="text-center">Search By Author</h1>
+        <form action="" class="row g-3 justify-content-center">
+            <div class="col-auto">
+                <input type="text" class="" id="AuthorSearch" placeholder="Author Name" />
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary" id="submit">
+                    Search
+                </button>
+            </div>
+        </form>
+        <div class="container-fluid bg-3 text-center">
+            <h3>Search Return</h3>
+            <table id="mytable" class="table table-striped table-hover" style="width:100%">
+                <tr id="tableheader">
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+            </table>
         </div>
-    </form>
-    <div class="container-fluid bg-3 text-center">
-        <h3>Search Return</h3>
-        <table id = "mytable" style="width:100%">
-            <tr id ="tableheader">
-              <th>Author</th>
-              <th>Title</th>
-              <th>Year</th>
-            </tr>
-        </table>
     </div>
-</div>
-    <script src=author.js></script>
+    
+    <script src="author.js"></script>
 </body>
+
 </html>
