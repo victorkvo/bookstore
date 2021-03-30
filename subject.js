@@ -29,6 +29,8 @@ fetch(`https://openlibrary.org/subjects/${genre}.json?`, requestOptions)
 
   .catch(error => console.log('error', error));
 }
+[].forEach.call(document.querySelectorAll('.row'), function (ele) {
+  ele.style.visibility = 'visible';});
 }
 
 
