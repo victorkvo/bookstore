@@ -1,5 +1,6 @@
 function genreTitle() {
-  // e.preventDefault();
+ 
+//value is taken from genre drop down menu
   let genre = books.value;
 
 var requestOptions = {

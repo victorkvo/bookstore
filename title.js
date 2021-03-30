@@ -9,31 +9,28 @@ function movieTitle(e) {
     document.getElementById(`book${o}`).src = ""
     document.getElementById(`desc${o}`).innerHTML = ""
   };
-
+  var placeHolder = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas illo explicabo autem quia totam commodi animi eos nemo voluptatibus cumque."
   let title = search.value;
-
-var placeHolder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, similique facilis? Qui voluptate rem rerum nostrum perspiciatis tempore consequatur provident obcaecati necessitatibus?"
 
 var requestOptions = {
   method: 'GET',
   redirect: 'follow'
 };
 for(let i=0; i<6; i++){
+  // api request to Search api
 fetch(`https://openlibrary.org/search.json?title=${title}`, requestOptions)
   .then(response => response.json())
   .then((result) => {
-    console.log(result.docs[i].title)
     document.getElementById(`title${i}`).innerHTML = result.docs[i].title;
+    // isbn result from Search api used to link covers
     var isbn = result.docs[i].isbn[4]
-    console.log(isbn)
     document.getElementById(`book${i}`).src = `https://covers.openlibrary.org/b/isbn/${isbn}-L.jpg?default=false`;
     var works = result.docs[i].key;
+    // using Search api return, we called Works api to pull book description
     return fetch(`https://openlibrary.org${works}.json`, requestOptions)
   
   .then(response => response.json())
   .then((result) => {
-    console.log(result.description)
-    console.log(typeof result.description)
   
     if (result.description == undefined){
       document.getElementById(`desc${i}`).innerHTML = placeHolder
@@ -45,6 +42,7 @@ fetch(`https://openlibrary.org/search.json?title=${title}`, requestOptions)
   .catch(error => console.log('error', error));
 }
 document.getElementById('search').value='';
+
 [].forEach.call(document.querySelectorAll('.row'), function (el) {
   el.style.visibility = 'visible';
 });
